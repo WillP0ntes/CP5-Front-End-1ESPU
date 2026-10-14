@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Meu Projeto Tailwind</title>
+</head>
+<body>
+    <header class="flex items-center justify-between px-8 py-4 bg-[#f5f0e6]">
+        <div class="text-xl font-serif font-bold text-stone-900">
+            <h1>Fio & Prensa</h1>
+        </div>
+        <nav class="flex gap-8 text-sm text-stone-700">
+            <p>O ofício</p>
+            <p>Serviços</p>
+            <p>Peças</p>
+            <p>Contato</p>
+        </nav>
+        <div>
+            <button class="bg-[#1b3b2b] text-white px-5 py-2.5 rounded text-sm font-medium hover:bg-[#142d20] transition-colors">
+                Agendar visita
+            </button>
+        </div>
+    </header>
+    <div class="flex justify-between items-center px-24 py-16 bg-[#f5f0e6] gap-12">
+        <div class="max-w-xl">
+            <h1 class="text-5xl font-serif font-bold text-stone-900 leading-tight mb-6">
+                Livros que se seguram nas mãos por gerações.
+            </h1>
+            <p class="text-stone-700 text-lg mb-8 leading-relaxed">
+                Costuramos, colamos e prensamos à mão — do caderno de uso diário à restauração de exemplares de família. Cada peça passa pelas mesmas quatro etapas que aprendemos há trinta anos.
+            </p>
+            <button class="border border-stone-800 text-stone-900 px-6 py-3 rounded text-sm font-medium hover:bg-stone-900 hover:text-[#f5f0e6] transition-colors">
+                Ver serviços
+            </button>
+        </div>
+        <div class="w-full max-w-md flex flex-col gap-6">
+            <div>
+                <h1 class="font-bold text-stone-900 text-base">Linho belga, cor terracota</h1>
+                <p class="text-stone-600 text-sm">Capa dura, acabamento fosco</p>
+            </div>
+            <div>
+                <h1 class="font-bold text-stone-900 text-base">Percalux verde-musgo</h1>
+                <p class="text-stone-600 text-sm">Resistente à umidade</p>
+            </div>
+            <div>
+                <h1 class="font-bold text-stone-900 text-base">Papel de guarda marmorizado</h1>
+                <p class="text-stone-600 text-sm">Feito à mão, padrão único</p>
+            </div>
+        </div>
+    </div>
+    <div class="px-24 py-16 bg-[#f5f0e0]">
+        <div class="max-w-xl mb-12">
+            <h1 class="text-4xl font-serif font-bold text-stone-900 mb-3">
+                O ofício, em quatro etapas
+            </h1>
+            <p class="text-stone-700">
+                Cada livro passa pela mesma sequência de trabalho, do primeiro caderno de páginas soltas até a prensa final.
+            </p>
+        </div>
+        <div class="grid grid-cols-4 gap-8">
+            <div>
+                <span class="text-amber-800 font-serif font-bold text-xl block mb-2">01</span>
+                <h2 class="font-bold text-stone-900 mb-1">Dobra</h2>
+                <p class="text-stone-600 text-sm">As folhas são dobradas em cadernos e organizadas na ordem de leitura.</p>
+            </div>
+            <div>
+                <span class="text-amber-800 font-serif font-bold text-xl block mb-2">02</span>
+                <h2 class="font-bold text-stone-900 mb-1">Costura</h2>
+                <p class="text-stone-600 text-sm">Os cadernos são costurados manualmente com fio encerado, ponto a ponto.</p>
+            </div>
+            <div>
+                <span class="text-amber-800 font-serif font-bold text-xl block mb-2">03</span>
+                <h2 class="font-bold text-stone-900 mb-1">Colagem</h2>
+                <p class="text-stone-600 text-sm">O lombo recebe cola natural, que dá firmeza sem engessar o papel.</p>
+            </div>
+            <div>
+                <span class="text-amber-800 font-serif font-bold text-xl block mb-2">04</span>
+                <h2 class="font-bold text-stone-900 mb-1">Prensagem</h2>
+                <p class="text-stone-600 text-sm">O volume descansa na prensa por 24h para fixar a forma definitiva.</p>
+            </div>
+        </div>
+    </div>
+    <div class="px-24 py-16 bg-[#f5f0e6]">
+        <h1 class="text-3xl font-serif font-bold text-stone-900 mb-8">Peças recentes</h1>
+        <div class="grid grid-cols-4 grid-rows-2 gap-4">
+            <img src="https://picsum.photos/seed/a/800/400" alt="Caderno de campo" class="w-full h-64 object-cover rounded col-span-2 row-span-2">
+            <img src="https://picsum.photos/seed/b/400/200" alt="Restauro" class="w-full h-30 object-cover rounded col-span-1 row-span-1">
+            <img src="https://picsum.photos/seed/c/400/200" alt="Álbum" class="w-full h-30 object-cover rounded col-span-1 row-span-1">
+            <img src="https://picsum.photos/seed/d/1200/300" alt="Edição limitada" class="w-full h-40 object-cover rounded col-span-2 row-span-1">
+        </div>
+    </div>
+    <footer class="bg-[#1b3b2b] text-[#f5f0e6] px-24 py-16">
+        <h1 class="text-3xl font-serif font-bold mb-12">Visite o ateliê</h1>
+
+        <div class="grid grid-cols-3 gap-8 mb-12 text-sm">
+            <div>
+                <h1 class="text-xs text-[#f5f0e6]/70 mb-1">ENDEREÇO</h1>
+                <p>Rua dos Encadernadores, 214 — Lapa, São Paulo</p>
+            </div>
+            <div>
+                <h1 class="text-xs text-[#f5f0e6]/70 mb-1">HORÁRIO</h1>
+                <p>Terça a sábado, 10h às 18h</p>
+            </div>
+            <div>
+                <h1 class="text-xs text-[#f5f0e6]/70 mb-1">CONTATO</h1>
+                <p>contato@fioeprensa.com.br</p>
+            </div>
+        </div>
+
+        <div class="text-xs text-[#f5f0e6]/60">
+            <p>2026</p>
+        </div>
+    </footer>
+</body>
+</html>
